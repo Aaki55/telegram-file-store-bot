@@ -1,6 +1,5 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackContext
-from telegram import ChatAction
 import os
 import logging
 from config import TELEGRAM_TOKEN, MAX_FILE_SIZE_MB, LOG_FILE
@@ -56,3 +55,4 @@ async def main():
 if __name__ == '__main__':
     import asyncio
     asyncio.run(main())
+        
